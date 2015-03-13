@@ -1,0 +1,50 @@
+<style>
+H1    {
+     Font-family: Georgia, “Times New Roman”, serif; 
+     Font-size 3em; 
+     Font-style: italic
+     Margin: 1em 0 .4em;
+     text-align: center;
+}
+h1      {
+   text-align: center
+}
+h1 {
+font-size:60;
+}
+H2      {
+     Color: blue;
+     Font-weight: normal;
+     }
+h2 {
+   text-align: center}
+h2 {
+   font-size:250%;
+}
+h2       {
+   border-bottom-width: thick;
+   border-bottom-style: solid;
+   border-bottom-color: blue;
+}
+Body     {
+     width: 90%;
+     margin: 0 auto;
+     padding: 35;
+     font: 100% arial, Helvetica, sans-serif;
+     Background: white ;
+     Border-bottom: 40px solid blue;
+     Border-top: 40px solid blue;
+}
+Html     {
+     Margin:0;
+     Padding: 0;
+     Background-color:blue;
+     P   {
+     Line-height: 0;
+     Text-align: justify;
+     Margin: 10;
+     Margin-bottom: 3em; 
+</Style>
+
+    
+    
