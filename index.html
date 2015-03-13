@@ -1,0 +1,337 @@
+<html>
+	<head>
+        <div class="header">
+        <h1>Intro To Programming</h1>
+        <center><img src="HTML & CSSD.jpg" width= "700" height="200"align="middle"></center>
+        </div>
+		<title>Hector's Webpage</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+        
+	</head>
+	<body>
+		<div class="lesson">
+			<h2>Lesson 1: The Basics of the Web and HTML</h2>
+			<div class="concept">
+				<div class="concept-title">
+					Overview of the Internet
+				<div class="concept-description">
+					<p>
+						First, recall the two main topics covered in this lesson.
+						</p>
+					<p>	
+                    <ul>
+                    <l1>
+						1.<B>Overview of the Internet:</B> You were shown the big-picture view of how the Internet works and were introduced to terms like <b>servers, browsers, the internet,</B> and <b>HTTP</b>.
+					</P>
+					<p>
+						2.<B>Introduction to HTML:</B> You were introduced to HTML tags (like <code>&lt;b&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;em&gt;</code>) and saw how even though these tags aren't visible to users                           of a web page, they still carry meaning that is meaningful to web browsers.
+                     </ul>
+					</P>
+					<p>
+						These topics were covered quickly and it's okay if you forget a lot of the details. But there are a few points which you should keep with you.
+					<p>	
+						<b>What to take away from this lessons?</b>
+					</P>
+				<div class="concept-description">
+					<p>
+						<b>The five most important things to take from this lesson are the following:</b>
+					</P>
+					<p>
+                    <ul>
+					<l1>
+						<b>1 - What a Web Page is:</b>
+					</P>
+					<p>
+						A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and display them.
+					</P>
+					<p>	
+						<b>2 - How Coding Works</b>
+                    </p>
+					</P>
+					<p>
+						Coding happens when programmers write text in a language that a computer can understand. The computer can then follow the instructions the programmer wrote. For example, the computer might do this by making                         text like this:
+					</P>
+					<p>
+						I'm <code>&lt;b&gt;</code>learning<code>&lt;/b&gt;</code> to code!
+					</P>
+					<p>
+						look like this:
+					</P>
+					<p>
+						I'm <b>learning</b> to code!
+					</p>
+					<p>
+						<b>3 - Computers are Stupid</b>
+					</p>
+					<p>
+						Programmers need to write exactly the way a computer understands (also known as writing with correct "syntax"). 
+	
+				</p>
+					<p>
+						For example, if you forget to close a <code>&lt;b&gt;</code> tag, the computer won't be able to figure out what you had intended to make bold. This "stupidity" can be very frustrating, but it also gives                             programmers incredible power: if you know how to talk to a computer than you can tell it do  anything you want.
+					</P>
+					<p>
+						<b>4 - Programmers Can't Remember Everything</b>
+					<p>
+						There are too many details to keep everything in your head. And that's okay. If you forget how to make text italic in HTML, you can always just look it up. 
+					</p>
+					<p>
+						<b>5 - Basic HTML Vocabulary</b>
+					</p>
+					<p>
+						You will be using HTML in the next few lessons, so it will be helpful if you're comfortable with the jargon.
+					</P>
+					<p>
+						<b>Tag</b>: An HTML tag is always contained within angled brackets. Most tags have an opening tag (<code>&lt;p&gt;</code> for example) and a closing tag, (<code>&lt;/p&gt;</code> for example). Some tags                             (called "void" tags) do not require a closing tag (like the <code>&lt;b&gt;</code> tag)
+					</p>
+					<p>
+						<b>Element</b>: An HTML element refers to everything within a set of opening and closing tags.
+					</p>
+					<p>	
+						<b>Attribute</b>: This is a property of an HTML element. For example, to set the href attribute of an anchor tag to the Udacity URL, you would write (a href="www.udacity.com")
+					
+					</p>
+                    </ul>
+				</div>
+			</div>
+		<div class="lesson">
+			<h2>Lesson 2: Creating a Structured Document with HTML</h2>
+			<div class="concept">
+				<div class="concept-title">
+				<b>Developer Tools (in the Browser)</b> 
+			</div>
+				<div class="concept-description">
+					<p>
+						HTML elements are either <b>inline</b> or <b>block</b>. Block elements form an "invisible box" around the content inside of them. 
+					</p>
+					<p>
+						<b>The "tree-like structure" of HTML</b>
+					</P>
+					<p>
+	   					The "tree-like structure" comes from the fact that HTML elements can have other elements inside of them. You can draw this relationship like a family tree. My mother had multiple children. So did her mother,                         and so on...
+						In a browser, this structure shows up as a series of nested boxes. There are boxes inside of boxes inside of boxes, and so on... 
+					</p>
+					<p>
+						<b>Text Editors (for programming)</b>
+					</p>
+					<p>
+						When writing code, programmers use special text editors (like Sublime Text for example). These editors make the programmer's life easier. For example, some text editors will automatically generate a closing                         HTML tag when you write an opening tag. 
+					</P>
+					<p>
+						<b>Span and Div</b>
+					</p>
+					<p>
+						HTML is all about applying meaning to content. Whereas most HTML tags apply meaning (p makes a paragraph, h1 makes a heading etc.), the span and div tags apply no meaning at all. This might sound about as                           useful as a foam hammer but they are actually used quite extensively in conjunction with CSS.
+					</P>
+					<p>
+						They are used to group together a chunk of HTML and hook some information onto that chunk, most commonly with the attributes class and id to associate the element with a class or id CSS selector.
+					</p>
+					<p>
+						The difference between span and div is that a span element is in-line and usually used for a small chunk of HTML inside a line (such as inside a paragraph) whereas a div (division) element is block-line                             (which is basically equivalent to having a line-break before and after it) and used to group larger chunks of code.
+					</p>
+					<p>
+						(div id="scissors">
+					</P>
+	    			<p>
+	    				<code>&lt;p&gt;</code>This is (span class="paper">crazy</span><code>&lt;/p&gt;</code>
+	    			</p>
+	    			<p>
+						(/div>
+					</p>
+					<p>
+						Div and especially span shouldn’t actually be used that often. Whenever there is a sensible alternative that should be used instead. For example, if you want to emphasize the word “crazy” and the class                               “paper” is adding italics for visual emphasis, then, for richer, more meaningful content, the code might look like this:
+					</p>
+					<p>
+						(div id="scissors">
+					</p>
+	    				<code>&lt;p&gt;</code>This is (em class="paper">crazy</em><code>&lt;/p&gt;</code>
+	    			<p>
+						(/div>
+					</p>
+					<p>
+						The <em>DIV</em> element defines logical divisions on your web page. It acts a lot like a P element, by placing newlines or carriage returns before and after the division. A division can have multiple                               paragraphs in it. 
+					</p>
+					<p>
+						<b>Using the <em>DIV</em> Tag</b>
+					</p>
+					<p>
+						To use the <em>DIV</em> element, surround the area of your page that you want as a separate division with the <code>&lt;div&gt;</code> and <code>&lt;/div&gt;</code> tags: 
+					</p>
+					<p>
+						<code>&lt;div&gt;</code>
+					</p>
+					<p>
+						<code>&lt;p&gt;</code>contents of div<code>&lt;/p&gt;</code>
+					</p>
+					<p>
+						<code>&lt;/div&gt;</code>
+					</P>
+					<p>
+						the area is unique on the page, you can add an id, e.g. (div id="myDiv"> or if there are many similar areas onthe page, you can add a class, e.g. (div class="bigDiv">. Both of these attributes can then be                           selectted using CSS or modified using JavaScript. 
+					</P>
+					<p>
+						The <em>DIV</em> element allows you to define the style of entire sections of the HTML. You can define a division of your page as a callout and give that area a different style from the surrounding text.                             That area may have images, paragraphs, headlines, anything you wanted. The <em>DIV</em> element also gives you the ability to identify unique areas of your documents. 
+					</p>
+					<p>
+						•	If you need the element simply to add styles to that area of the page, you should use the DIV element.
+					</p>
+					<p>
+						•	If that area of the page has a specific semantic meaning or the contents can stand on its own like an article or or blog post, then you should use the SECTION element.
+					</p>
+					<p>
+						<b>Div and Span</b>
+					</p>
+					<p>
+						As we’ve seen in previous sections, using CSS is straightforward. Provide a selector (”select all p elements”), provide a rule (”make their text red”), and we’re done. Both the selectors and the rules can be                         much more complicated, but this is the core of it.
+					</p>
+					<p> 
+						Let’s take a look at another component of our style sheet toolbox: the “generic” elements, div and span. These elements are designed to help you mark off arbitrary chunks of HTML for styling. 
+					</p>
+					<p>
+						<b>The <em>span</em> Element</b>
+					</p>
+					<p>
+						The <em>span</em> element is the generic inline element. Let's see this element in action: 
+					</p>
+					<p>
+						1.	<code>&lt;p&gt;</code>  
+					<ul>
+					<l1>
+						2.	Towards thee I roll, thou all-destroying but 
+					
+					<br>
+					<l1>
+						3.	unconquering whale; (span> to the  
+					<br>
+					<L1>
+						4.  last I grapple with thee; from hell's heart I stab  
+					
+					<br>
+					<L1>
+						5.	at thee; for hate's sake I spit my last breath at  
+					
+					<br>
+					<L1>
+						6.	thee.(/span> Sink all coffins and all  
+					
+					<br>
+					<L1>
+						7.	hearses to one common pool! and since neither can  
+					
+					<br>
+					<L1>
+						8.	be mine, let me then tow to pieces, while still  
+					
+					<br>
+					<L1>
+						9.	chasing thee, though tied to thee, thou damned  
+					
+					<br>
+					<L1>
+						10.	whale! Thus, I give up the spear! 
+					
+					</ul>
+						11.	<code>&lt;/p&gt;</code>
+					</p>  
+					
+					<p>
+						If you view the results, it looks like… the <b><em>span</em></b> didn’t do anything. And that’s the point: by default, the span element isn’t supposed to do anything. It serves as a placeholder or marking                           point for beginning and ending a style. 
+					</p>
+					<p>
+						<b>Tip</b> 
+					</P>
+						Before using the generic span element, try using an em, strong, code, or other logical style. If possible, it's better to start with an element that has some intrinsic meaning. 
+					</P>
+					<p>
+						<b>The</b> <em>div</em> <b>Element</b>
+					</p>
+					<p>
+						The <em>div</em> element is the generic block element. You can use <em>div</em> to apply styles to large sections of HTML, such as multiple paragraphs. Like all block elements, the <em>div</em> element                               defines a “box” of HTML. 
+					</p>
+					<p>
+						The <em>div</em> element applies the style to the second and third paragraphs. Note that even though the <em>div</em> element is a “block” element, it does not create extra line breaks between paragraphs 1                           and 2 or paragraphs 3 and 4. However, if we had tried to insert the <em>div</em> inside one of the paragraphs, we would have created a new text block. (Try it.) 
+					</p>
+				</div>
+			</div>
+		<div class="lesson">
+			<h2>Lesson 3: CSS</h2>
+            <div class="concept">
+					<div class="concept-title">
+				</div>
+					<div class="concept-description">
+					<p>
+						<b>What is CSS?</b>
+					</p>
+					<p>
+						CSS is code written to control the "style" of HTML elements.
+					</p>
+					<p>
+						<b>How does CSS "control" HTML?</b>
+					</p>
+					<p>
+						If you want to write CSS that makes all <em>h1</em> elements have a black background and white text, you would write: 
+					</p>
+					<p>
+						h1 {
+						<ul>
+						<l1>
+					</p>
+					<p>
+	  						background-color : black;
+	  					<l1>
+	  				</p>
+	  				<p>
+	 						color: white;
+	 					</ul>
+	 				<p>
+						}
+					</p>
+					<p>
+						In this example, the <em>h1</em> is a <b>selector</b>. It says to the browser "I want you to apply the rules I'm about to tell you to every h1 element."
+					</p>
+					<p>
+						After the <em>h1</em> there is a left curly brace { and at the bottom there is a matching right curly brace }. Everything between these curly braces will be interpreted as a "rule" that should be applied to                         every <em>h1</em> element.
+					</p>
+					<p>
+						The line of code that says background-color : black; is a <b>rule</b>. background-color is an <b>attribut</b> and <em>black</em> is the <b>value</b> of that attribute.
+					</p>
+					<p>
+						<b>Selecting by class</b>
+					</p>
+					<p>
+                        In the example above, we set the background-color of <em>every</em> h1 to black. If you only want to add style to certain h1s, you can use <b>class selectors</b>b>. Try copying the following code into <a      
+                        href="http://scratchpad.io/shy-discovery-3979">scratchpad.io </a> 
+					</p>
+					<p>
+						You should see a traffic light. Note how in the (style> element you refer to an HTML element's class name by writing .class-name 
+					</p>
+					<p>
+						Also note how we can apply rules to <b>all</b> divs or just <em>certain</em> divs by using the appropriate selector.
+					</p>
+					<p>
+
+				</div>
+			</div>
+		<body>
+        <div class="lesson">
+        <h2>Important Things to Know</h2>
+          <div class="concept">
+             <div class="concept-title">
+              </div>
+                <div class="concept-description">
+                <p>
+                    <b>Structured programming</b> (sometimes known as modular programming) is a subset of procedural programming that enforces a logical structure on the program being written to make it more efficient and                                     easier to understand and modify. Certain languages such as Ada, Pascal, and dBASE are designed with features that encourage or enforce a logical program structure.
+                </p>
+                <p>
+                    Structured programming frequently employs a top-down design model, in which developers map out the overall program structure into separate subsections. A defined function or set of similar functions                                 is coded in a separate module or submodule, which means that code can be loaded into memory more efficiently and that modules can be reused in other programs. After a module has been tested                                           individually, it is then integrated with other modules into the overall program structure.
+                </p>
+                <p>
+                    Program flow follows a simple hierarchical model that employs looping constructs such as "for," "repeat," and "while." Use of the "Go To" statement is discouraged.
+                </p>
+                <p>
+                    <b>Avoiding repetition is important for a variety of reasons.</b><br><br>
+                    Avoiding Errors: When programmers don't avoid repetition, they will often have to do the same thing over and over. This may mean copy and pasting certain style attributes into many HTML elements or rewriting the                     same code (sometimes with minor differences) many times. This can lead to errors when the programmer decides to make a change to something. If they don't dilligently make that same change everywhere the repeated                     code appears, problems will arise.<br><br>
+                </p>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br>
